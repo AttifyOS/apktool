@@ -1,2 +1,3 @@
-# apktool
-Apktool packaged for AttifyOS
+# Apktool
+
+ A tool for reverse engineering Android apk files
