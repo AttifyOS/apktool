@@ -35,7 +35,7 @@ install() {
   tar xf $APM_TMP_DIR/OpenJDK8U-jre_x64_linux_hotspot_8u345b01.tar.gz -C $APM_PKG_INSTALL_DIR
 
   echo "#!/usr/bin/env sh" > $APM_PKG_BIN_DIR/apktool
-  echo "$APM_PKG_INSTALL_DIR/jdk8u345-b01-jre/bin/java -jar $APM_PKG_INSTALL_DIR/apktool.jar" >> $APM_PKG_BIN_DIR/apktool
+  echo "$APM_PKG_INSTALL_DIR/jdk8u345-b01-jre/bin/java -jar $APM_PKG_INSTALL_DIR/apktool.jar \"\$@\"" >> $APM_PKG_BIN_DIR/apktool
   chmod +x $APM_PKG_BIN_DIR/apktool
 }
 
